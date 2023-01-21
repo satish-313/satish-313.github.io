@@ -25,6 +25,15 @@ main {
   overflow-x: hidden;
 }
 
+section {
+  max-width: 900px;
+  width: 90vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -155,13 +164,24 @@ header i {
 }
 
 /* ABOUT */
-#about {
+/* #about {
   max-width: 900px;
   width: 90vw;
-  height: 90vh;
+  height: 100vh;
   scroll-snap-align: center;
   margin: 0 auto;
-}
+  padding-top: 5rem;
+} */
+
+/* EXPIRENCE */
+/* #expirence {
+  max-width: 900px;
+  width: 90vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+} */
 
 /* RESPONSIVE */
 @media only screen and (min-width: 900px) {
