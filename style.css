@@ -2,10 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth ;
 }
 
 body {
@@ -82,7 +79,7 @@ header i {
   border: 1px solid rgb(222, 194, 194);
   border-radius: 50%;
   position: absolute;
-  top: calc(83vh / 2 - 65vh / 2);
+  top: calc(70vh / 2 - 65vh / 2);
   animation: scale-down 1.5s ease-in-out 700ms 1,
     pulse-scale 2s ease-in-out 2s infinite;
 }
@@ -93,7 +90,7 @@ header i {
   border: 2px solid whitesmoke;
   border-radius: 50%;
   position: absolute;
-  top: calc(83vh / 2 - 50vh / 2);
+  top: calc(70vh / 2 - 50vh / 2);
   animation: pulse 2s ease-in-out 2s infinite;
 }
 
@@ -103,7 +100,7 @@ header i {
   border: 4px solid green;
   border-radius: 50%;
   position: absolute;
-  top: calc(83vh / 2 - 35vh / 2);
+  top: calc(70vh / 2 - 35vh / 2);
 }
 
 .hero-description {
@@ -112,11 +109,9 @@ header i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid pink;
 }
 
 .hero-image {
-  border: 1px solid blue;
   margin: 0 auto;
 }
 
@@ -126,7 +121,7 @@ header i {
   border-radius: 50%;
   display: block;
   position: absolute;
-  top: calc(83vh / 2 - 6rem);
+  top: calc(70vh / 2 - 6rem);
   margin-left: -6rem;
 }
 
@@ -137,14 +132,14 @@ header i {
   letter-spacing: 0.1rem;
   position: absolute;
   margin-top: 1rem;
-  top: calc(83vh / 2 + 7rem);
+  top: calc(70vh / 2 + 7rem);
 }
 
 #hero-nav {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  top: calc(83vh / 2 + 11rem);
+  top: calc(70vh / 2 + 13rem);
   justify-content: space-around;
 }
 
