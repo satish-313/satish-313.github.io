@@ -42,6 +42,6 @@ function showIntro() {
   }
 }
 
-setInterval(() => {
-  showIntro();
-}, 500);
+// setInterval(() => {
+//   showIntro();
+// }, 500);
