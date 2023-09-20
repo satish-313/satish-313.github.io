@@ -41,11 +41,11 @@ header {
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 header i {
-    color: rgb(156 163 175);
+    color: rgb(107, 148, 218);
     margin: 0 0.35rem;
     font-size: 1.5rem;
 }
@@ -58,7 +58,6 @@ header i {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    animation: show-bg 1s ease-in-out 0s 1;
     scroll-snap-align: center;
 }
 #hero div {
@@ -79,9 +78,15 @@ header i {
 
 #intro {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(182, 18, 45);
     letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.hero-description p::after {
+    content: "|";
+    color: black;
 }
 
 #hero-nav {
@@ -89,6 +94,7 @@ header i {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: -4rem;
 }
 
 #hero-nav h3 {
@@ -105,6 +111,89 @@ header i {
 #hero-nav h3:hover {
     color: rgb(232, 4, 38);
 }
+@media only screen and (max-width: 650px) {
+    .hero-description img {
+        height: 8rem;
+        width: 8rem;
+    }
+    #hero-nav {
+        align-items: flex-start;
+        margin: 0;
+    }
+    #intro {
+        font-size: 1rem;
+    }
+}
+
+/* ABOUT */
+.top-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(232, 4, 38);
+    text-decoration: underline;
+    text-shadow: 1px 1px 0 rgb(156 163 175);
+    letter-spacing: 4px;
+}
+#about div h1 {
+    display: inline;
+    letter-spacing: 3px;
+    font-size: 1.75rem;
+    background-color: palevioletred;
+    background-image: linear-gradient(
+        to right,
+        palevioletred,
+        rgb(255, 217, 0)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+}
+
+.about-para p {
+    margin-top: 1rem;
+    color: rgb(55 65 81);
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+    .about-me,
+    #about div h1 {
+        font-size: 1.25rem;
+    }
+    .about-image img {
+        height: 6rem;
+        width: 6rem;
+    }
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .about-grid p {
+        font-size: 1.25rem;
+        line-height: 1;
+    }
+}
+
+/* SKILLS */
 
 /* RESPONSIVE */
 @media only screen and (min-width: 900px) {
@@ -120,15 +209,6 @@ header i {
     }
 }
 
-@media only screen and (max-width: 650px) {
-    .hero-description img {
-        height: 8rem;
-        width: 8rem;
-    }
-    #hero-nav {
-        align-items: flex-start;
-    }
-}
 /* ANIMATION */
 
 /* header */
@@ -169,4 +249,8 @@ header div {
     100% {
         opacity: 1;
     }
+}
+
+.scroll-animation {
+    animation: show-bg 700ms ease-in-out 0s 1;
 }
