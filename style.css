@@ -29,6 +29,7 @@ section {
     scroll-snap-align: center;
     margin: 0 auto;
     padding-top: 60px;
+    overflow: hidden;
 }
 
 /* HEADER */
@@ -56,8 +57,6 @@ header i {
     width: 90vw;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    position: relative;
     scroll-snap-align: center;
 }
 #hero div {
@@ -90,6 +89,7 @@ header i {
 }
 
 #hero-nav {
+    height: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -107,6 +107,7 @@ header i {
     font-size: 1rem;
     cursor: pointer;
     color: rgb(85, 83, 83);
+    text-align: center;
 }
 #hero-nav h3:hover {
     color: rgb(232, 4, 38);
@@ -117,18 +118,21 @@ header i {
         width: 8rem;
     }
     #hero-nav {
-        align-items: flex-start;
-        margin: 0;
+        display: block;
+        margin: -1rem;
     }
     #intro {
         font-size: 1rem;
+    }
+    .sm-hide {
+        display: none;
     }
 }
 
 /* ABOUT */
 .top-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     color: rgb(232, 4, 38);
     text-decoration: underline;
@@ -179,8 +183,8 @@ header i {
         font-size: 1.25rem;
     }
     .about-image img {
-        height: 6rem;
-        width: 6rem;
+        height: 8rem;
+        width: 8rem;
     }
     .about-grid {
         display: flex;
@@ -194,6 +198,15 @@ header i {
 }
 
 /* SKILLS */
+
+/* Expirence */
+.card {
+    height: 90%;
+    width: 70%;
+    max-width: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
 
 /* RESPONSIVE */
 @media only screen and (min-width: 900px) {
