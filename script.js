@@ -56,4 +56,4 @@ function showIntro() {
 
 setInterval(() => {
     showIntro();
-}, 400);
+}, 200);
