@@ -10,6 +10,11 @@ let allSection = document.querySelectorAll("section");
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                if (entry.target.id === "skills") {
+                    setAnimationInSkill();
+                }
+            }
             entry.target.classList.toggle(
                 "scroll-animation",
                 entry.isIntersecting
@@ -22,6 +27,21 @@ const observer = new IntersectionObserver(
 );
 
 allSection.forEach((s) => observer.observe(s));
+
+function setAnimationInSkill() {
+    const skillt = document.getElementsByClassName("skill-title");
+    const skilli = document.getElementsByClassName("skill-img");
+    const len = skilli.length;
+    for (let i = 0; i < len; i++) {
+        if (i % 2 === 0) {
+            skillt[i].classList.toggle("fromleft-animation");
+            skilli[i].classList.toggle("fromleft-animation");
+        } else {
+            skillt[i].classList.toggle("fromright-animation");
+            skilli[i].classList.toggle("fromright-animation");
+        }
+    }
+}
 
 function showIntro() {
     while (index < myIntro.length) {
