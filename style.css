@@ -274,21 +274,128 @@ header i {
         display: none;
     }
 }
+
 /* Expirence */
+.exp-wrapper {
+    height: 90%;
+}
 .card {
     height: 90%;
-    width: 70%;
-    max-width: 600px;
-    border: 2px solid black;
+    width: 60%;
     margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+}
+.card-content {
+    height: 100%;
+    padding: 20px;
+    scroll-snap-align: center;
+}
+.card-content img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.tech-stack {
+    margin-top: 15px;
+}
+.job-title {
+    color: rgb(55 65 81);
+    font-size: 1rem;
+    font-family: monospace;
+    margin: 5px 0;
+}
+.company-name {
+    font-size: 0.75rem;
+    color: rgb(55 65 81);
+    margin: 5px 0;
+}
+.tech-stack i {
+    color: rgb(107, 148, 218);
+}
+.tech-stack span {
+    color: rgb(37 99 235);
+}
+.image-container {
+    margin: 6px 0;
+}
+.tech-stack img {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.job-description {
+    margin-left: 20px;
+    padding: 5px 10px;
+    line-height: 1.25;
+}
+@media only screen and (max-width: 650px) {
+    /* header */
+    .card {
+        width: 90%;
+    }
 }
 
 /* Project */
-#projects img {
-    height: 10px;
-    width: 10px;
+#projects h5 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+.project-stack {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+.project-stack img {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+    margin: 0 5px;
 }
 
+@media only screen and (max-width: 650px) {
+    /* header */
+    #projects img {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-links i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: rgb(2 132 199);
+}
+.share-links i:hover {
+    cursor: pointer;
+}
+.contact-links span {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    color: rgb(75 85 99);
+}
+.contact-links h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 /* RESPONSIVE */
 @media only screen and (min-width: 900px) {
     /* header */
@@ -346,10 +453,10 @@ header div {
 }
 
 .fromleft-animation {
-    animation: fromleft 1s ease-in 50ms 1;
+    animation: fromleft 1s ease-in-out 50ms 1;
 }
 .fromright-animation {
-    animation: fromright 1s ease-in 50ms 1;
+    animation: fromright 1s ease-in-out 50ms 1;
 }
 .scroll-animation {
     animation: pulse 700ms ease-in-out 0s 1;

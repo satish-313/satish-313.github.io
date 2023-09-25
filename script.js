@@ -13,6 +13,8 @@ const observer = new IntersectionObserver(
             if (entry.isIntersecting) {
                 if (entry.target.id === "skills") {
                     setAnimationInSkill();
+                } else {
+                    setAnimationInSkill();
                 }
             }
             entry.target.classList.toggle(
