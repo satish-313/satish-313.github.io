@@ -461,3 +461,23 @@ header div {
 .scroll-animation {
     animation: pulse 700ms ease-in-out 0s 1;
 }
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(314, 50%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(314, 90%, 25%);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: hsl(314, 50%, 75%)hsl(314, 90%, 25%);
+        scrollbar-width: auto;
+    }
+}
