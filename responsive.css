@@ -1,0 +1,61 @@
+@media only screen and (max-width: 810px) {
+    /* Nav */
+    header {
+        overflow: hidden;
+    }
+    header nav > div:nth-child(2) {
+        display: none;
+    }
+    header nav .nav-bar {
+        display: block;
+    }
+
+    /* Hero */
+    #hero .hero-desc {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 0.8rem;
+    }
+    .grid-img {
+        grid-template-columns: repeat(6, 35px);
+        grid-template-rows: repeat(3, 35px);
+        gap: 0.2rem;
+    }
+    .grid-img img {
+        height: 50px;
+    }
+
+    /* About */
+    .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+    .about-intro p {
+        line-height: 1.5;
+    }
+
+    .about-img img {
+        height: 200px;
+    }
+    /* project */
+    .project-img img {
+        height: 250px;
+    }
+    /* contact */
+    #contact .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+    /* About */
+    .about-img img {
+        height: 150px;
+    }
+    /* Project */
+    .project-img img {
+        height: 150px;
+    }
+}

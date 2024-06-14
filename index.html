@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>satish kumar</title>
-        <link rel="stylesheet" href="./style.css" />
+
         <link
             href="./fontawesome-free-6.4.2-web/css/fontawesome.css"
             rel="stylesheet"
@@ -17,6 +17,8 @@
             href="./fontawesome-free-6.4.2-web/css/solid.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./responsive.css" />
         <script defer src="./script.js"></script>
     </head>
     <body>
@@ -25,39 +27,99 @@
             <header>
                 <nav>
                     <div>
-                        <span>Satish Kumar</span>
+                        <a href="#hero">
+                            <input id="_hero" type="radio" name="nav-li" />
+                            <span for="_hero">Satish Kumar</span>
+                        </a>
                     </div>
                     <div>
-                        <span>About</span>
-                        <span>Skill</span>
-                        <span>Project</span>
-                        <span>Contact</span>
+                        <a href="#about">
+                            <input id="_about" type="radio" name="nav-li" />
+                            <span for="_about">About</span>
+                        </a>
+                        <a href="#skill">
+                            <input id="_skill" type="radio" name="nav-li" />
+                            <span for="_skill">Skill</span>
+                        </a>
+                        <a href="#project">
+                            <input id="_project" type="radio" name="nav-li" />
+                            <span for="_project">Project</span>
+                        </a>
+                        <a href="#contact">
+                            <input id="_contact" type="radio" name="nav-li" />
+                            <span for="_contact">Contact</span>
+                        </a>
+                    </div>
+                    <div class="nav-bar">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </nav>
             </header>
 
             <!-- Hero -->
-            <section class="hero">
-                <div>
-                    👋 I'm Satish Kumar full stack web developer with 2 year of
-                    expirence.<br /><br />
-                    Let's turn idea into reality.
+            <section id="hero">
+                <div class="hero-desc">
+                    <div>
+                        👋 I'm <b>Satish Kumar</b> , A full stack web developer.
+                        Proficient in crafting modern user friendly application
+                        using <b>ReactJs</b>, <b>NodeJs</b> and
+                        <b>Golang</b>.<br /><br />
+                        <u>Let's turn idea into reality.</u>
+                    </div>
+                    <div>
+                        <img class="p-img" src="./img/me.png" alt="satish" />
+                    </div>
                 </div>
-                <div>
-                    <img class="p-img" src="./img/me.png" alt="satish" />
+
+                <div class="grid-img">
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/framework/aws.svg" alt="aws" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/framework/reactjs.svg" alt="react" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img
+                            src="./img/plogo/typescript.svg"
+                            alt="typescript"
+                        />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/db/postgresql.svg" alt="postgres" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/framework/socket.svg" alt="socket.io" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/plogo/go-moskat.svg" alt="golang" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/version/github-icon.svg" alt="github" />
+                    </div>
+                    <div>
+                        <input type="radio" name="gI" />
+                        <img src="./img/os/linux-tux.svg" alt="linux" />
+                    </div>
                 </div>
-                <div>Stack animation</div>
             </section>
             <!-- About -->
-            <section class="about">
+            <section id="about">
                 <h3>About me</h3>
                 <div class="about-content">
                     <div class="about-intro">
                         <p>
-                            Hi I am satish kumar, full stack web developer with
-                            two years of experience in building user friendly
-                            and performant web applications. I am proficient in
-                            creating interactive front-end experience in
+                            Hi, I am satish kumar. A full stack web developer
+                            with two years of experience in building user
+                            friendly and performant web applications. I am
+                            proficient in creating interactive front-end
+                            experience in
                             <b>ReactJS</b>, <b>NextJS</b>, <b>JavaScript</b>,
                             and have a scalable and robust understanding of
                             back-end technologies in <b>Nodejs</b> and
@@ -76,7 +138,7 @@
                 </div>
             </section>
             <!-- Skill -->
-            <section class="skill">
+            <section id="skill">
                 <h3>Skill</h3>
                 <div>
                     <p>Programming Language</p>
@@ -116,7 +178,7 @@
                     </div>
                 </div>
                 <div>
-                    <p>Back-end technologies</p>
+                    <p>Back-End technologies</p>
                     <div class="card">
                         <div>
                             <img
@@ -185,7 +247,7 @@
                     </div>
                 </div>
                 <div>
-                    <p>Front-end technologies</p>
+                    <p>Front-End technologies</p>
                     <div class="card">
                         <div>
                             <img
@@ -231,7 +293,7 @@
                 </div>
             </section>
             <!-- Project -->
-            <section class="project">
+            <section id="project">
                 <h3>Projects</h3>
                 <div>
                     <div class="card">
