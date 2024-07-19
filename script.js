@@ -1,6 +1,12 @@
 const gridImg = document.querySelectorAll('.grid-img input[type="radio"]');
 const ss = document.querySelectorAll("section");
 const nav = document.querySelector("nav");
+const sbtn = document.querySelector("#submitbuttons");
+
+sbtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("something is wrong");
+});
 
 const observer = new IntersectionObserver(
     (entries) => {

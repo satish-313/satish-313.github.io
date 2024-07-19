@@ -16,7 +16,7 @@ a {
 header {
     position: sticky;
     top: 0px;
-    z-index: 5;
+    z-index: 0;
     overflow: hidden;
 }
 
@@ -191,10 +191,11 @@ section h3 {
     padding: 1rem;
 }
 #skill > div > p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    color: rgb(31 41 55);
+    color: rgb(26, 42, 64);
     text-align: center;
+    text-decoration: underline;
 }
 
 #skill .card {
@@ -213,20 +214,47 @@ section h3 {
 
 #skill .card p {
     font-size: 0.875rem;
-    color: rgb(51 65 85);
+    color: rgb(41, 57, 81);
 }
 
 /* Project */
+#project .card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(236, 248, 200);
+}
+#project .card > p:first-child {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(41 37 36);
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 .project-img img {
     height: 350px;
     object-fit: cover;
     display: block;
     margin: 1rem auto;
 }
-.tech-stack img {
-    width: 32px;
-    aspect-ratio: 1;
-    margin: 0.25rem;
+
+#project .project-stack ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#project .project-stack li {
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(31, 25, 25);
+    font-weight: 500;
+}
+
+#project .project-desc p {
+    margin: 1rem 0px;
 }
 
 /* Contact */

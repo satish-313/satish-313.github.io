@@ -297,40 +297,102 @@
                 <h3>Projects</h3>
                 <div>
                     <div class="card">
-                        <p>Ecom website for Toyes</p>
+                        <p>Ecom website</p>
+                        <div class="project-img">
+                            <img src="./img/project/ecom.png" alt="ecom" />
+                        </div>
+                        <div class="project-stack">
+                            <ul>
+                                <li>Golang</li>
+                                <li>React</li>
+                                <li>React Query</li>
+                                <li>Tailwind</li>
+                                <li>Shadcn UI</li>
+                                <li>Sqlite</li>
+                            </ul>
+                        </div>
+                        <div class="project-desc">
+                            <p>
+                                Build a full stack ecommerce website using
+                                modern technologies. Backend in
+                                <b>Golang</b> and Frontend UI using
+                                <b>ReactJs</b> . With all the essential features
+                                like adding to card, checkout , payment
+                                interface and proper user authentication.
+                            </p>
+                            <p>
+                                For storing user information used SQLite
+                                database in golang, for authentication used best
+                                practice of <b>JWT</b> with refresh token.
+                            </p>
+                            <p>
+                                Best way to use ReactJS is with tanstack
+                                <b> react query </b>
+                                as data feature and state management. For
+                                routing, I used a tanstack router.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Realtime Chat App</p>
+                        <div class="project-img">
+                            <img
+                                src="./img/project/realtimechat.jpg"
+                                alt="ecom"
+                            />
+                        </div>
+                        <div class="project-stack">
+                            <ul>
+                                <li>Nodejs</li>
+                                <li>Websocket</li>
+                                <li>socket.io</li>
+                                <li>MongoDB</li>
+                                <li>ReactJs</li>
+                            </ul>
+                        </div>
+                        <div class="project-desc">
+                            <p>
+                                Created realtime chat application using Reactjs
+                                & Nodejs stack using typescript. The realtime
+                                chat application used socket.io library to
+                                achive low-latency, bidirectional and event
+                                based communication on cliet(web) to server.
+                            </p>
+                            <p>
+                                UI is fully responsive to mobile and desktop.
+                                Create group or join a group to engage awesome
+                                conversion, chat,upload image/file and share
+                                thought.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Blog App</p>
                         <div class="project-img">
                             <img src="./img/project/blog.jpg" alt="ecom" />
                         </div>
-                        <div class="tech-stack">
-                            <img
-                                src="./img/plogo/golang.svg"
-                                alt="golang"
-                                srcset=""
-                            />
-                            <img
-                                src="./img/framework/reactjs.svg"
-                                alt="React"
-                                srcset=""
-                            />
-                            <img
-                                src="./img/apis/rest-api.svg"
-                                alt="rest"
-                                srcset=""
-                            />
-                            <img
-                                src="./img/markup/tailwind-css-2.svg"
-                                alt="tailwind"
-                                srcset=""
-                            />
+                        <div class="project-stack">
+                            <ul>
+                                <li>HygraphCMS</li>
+                                <li>GraphQL</li>
+                                <li>NextJS</li>
+                                <li>Tailwindcss</li>
+                            </ul>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. A, sequi voluptatem animi ad omnis non modi
-                            quia ab? Ducimus quibusdam sapiente ratione illum
-                            dolor provident sunt itaque labore totam magnam.
-                        </p>
-                        <div class="demo">
-                            <button>Live Demo</button>
+                        <div class="project-desc">
+                            <p>
+                                For a developer having a good blog is great,
+                                sharing knowledge. Created a simple blog website
+                                using Hygraph Headless CMS. It is graphql based
+                                headless cms where we create a good website with
+                                adding photo and style.
+                            </p>
+                            <p>
+                                Make a user responsive UI using tailwindcss in
+                                <b>NextJS</b>. Used server side rendering for
+                                good SEO and Nextjs api endpoint for GraphQL
+                                request and render the data.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -378,7 +440,7 @@
                         <input type="text" placeholder="Name" />
                         <input type="text" placeholder="Email" />
                         <textarea placeholder="Message"></textarea>
-                        <button type="submit">send</button>
+                        <button id="submitbuttons" type="submit">send</button>
                     </div>
                 </form>
             </section>
