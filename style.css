@@ -13,10 +13,13 @@ body {
 a {
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
 header {
     position: sticky;
     top: 0px;
-    z-index: 0;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -61,6 +64,35 @@ header nav span {
     font-size: 1.5rem;
 }
 
+.nv-hide {
+    display: none;
+}
+.nv-show {
+    display: block;
+}
+
+#side-bar {
+    display: none;
+    justify-content: center;
+    padding-top: 4rem;
+    position: fixed;
+    z-index: 4;
+    inset: 0;
+    background-color: rgb(37, 5, 95);
+}
+
+#side-bar li {
+    transform: translateX(-40%);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#side-bar li a span {
+    color: rgb(139, 129, 216);
+}
+#side-bar li a input[type="radio"] {
+    display: none;
+}
+
 section {
     min-height: 100vh;
     max-width: 1000px;
@@ -71,7 +103,7 @@ section {
 
 section h3 {
     letter-spacing: 2px;
-    /* color: rgb(39 39 42); */
+    color: rgb(39 39 42);
     margin: 2rem 5rem 1rem 5rem;
     width: max-content;
     background-color: palevioletred;
@@ -131,7 +163,6 @@ section h3 {
     grid-template-rows: repeat(3, 35px);
     place-items: center;
     padding-top: 2rem;
-    /* gap: 0.25rem; */
 }
 .grid-img div {
     grid-column: span 2;
@@ -145,24 +176,6 @@ section h3 {
 
 .grid-img div:nth-child(4) {
     grid-column: 2 / span 2;
-}
-/* Animation */
-@keyframes blob {
-    0% {
-        border-radius: 50% 50% 32% 68% / 47% 33% 67% 53%;
-    }
-    25% {
-        border-radius: 60% 40% 59% 41% / 31% 73% 27% 69%;
-    }
-    50% {
-        border-radius: 29% 71% 59% 41% / 45% 30% 70% 55%;
-    }
-    75% {
-        border-radius: 54% 46% 44% 56% / 78% 59% 41% 22%;
-    }
-    100% {
-        border-radius: 50% 50% 32% 68% / 47% 33% 67% 53%;
-    }
 }
 
 /* About */
@@ -239,7 +252,6 @@ section h3 {
 }
 
 #project .project-stack ul {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -310,4 +322,32 @@ section h3 {
     grid-column: 1/3;
     border-radius: 5px;
     font-size: 1.25rem;
+}
+
+/* Animation */
+@keyframes blob {
+    0% {
+        border-radius: 50% 50% 32% 68% / 47% 33% 67% 53%;
+    }
+    25% {
+        border-radius: 60% 40% 59% 41% / 31% 73% 27% 69%;
+    }
+    50% {
+        border-radius: 29% 71% 59% 41% / 45% 30% 70% 55%;
+    }
+    75% {
+        border-radius: 54% 46% 44% 56% / 78% 59% 41% 22%;
+    }
+    100% {
+        border-radius: 50% 50% 32% 68% / 47% 33% 67% 53%;
+    }
+}
+
+@keyframes sidbarani {
+    0% {
+        display: none;
+    }
+    100% {
+        display: flex;
+    }
 }
