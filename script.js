@@ -2,16 +2,16 @@ const gridImg = document.querySelectorAll('.grid-img input[type="radio"]');
 const ss = document.querySelectorAll("section");
 const nav = document.querySelector("nav");
 const sbtn = document.querySelector("#submitbuttons");
-const burger = document.querySelector("#burger");
-const cross = document.querySelector("#cross");
 const sideBar = document.querySelector("#side-bar");
+const inputChecked = document.querySelector("#menu-checkbox");
 const aLinkSidebar = sideBar.querySelectorAll("a");
+const anime = document.querySelector("#anime");
 
 aLinkSidebar.forEach((e) => {
     e.addEventListener("click", () => {
         removeSidebar();
-        cross.classList.add("nv-hide")
-        burger.classList.remove("nv-hide")
+        anime.style.clipPath = "circle(15px at calc(100% - 20px) -15px)";
+        inputChecked.checked = false;
     });
 });
 
@@ -20,16 +20,15 @@ sbtn.addEventListener("click", (e) => {
     alert("something is wrong");
 });
 
-burger.addEventListener("click", function () {
-    burger.classList.add("nv-hide");
-    cross.classList.remove("nv-hide");
-    showSidebar();
-});
-
-cross.addEventListener("click", function () {
-    burger.classList.remove("nv-hide");
-    cross.classList.add("nv-hide");
-    removeSidebar();
+inputChecked.addEventListener("click", async function () {
+    if (inputChecked.checked) {
+        anime.style.clipPath = "circle(100%)";
+        await new Promise((r) => setTimeout(r, 500));
+        showSidebar();
+    } else {
+        removeSidebar();
+        anime.style.clipPath = "circle(15px at calc(100% - 20px) -15px)";
+    }
 });
 
 const observer = new IntersectionObserver(

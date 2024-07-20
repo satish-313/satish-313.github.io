@@ -63,12 +63,21 @@ header nav span {
     color: rgb(240, 249, 255);
     font-size: 1.5rem;
 }
-
-.nv-hide {
+.nav-bar input[type="checkbox"] {
     display: none;
 }
-.nv-show {
-    display: block;
+
+.nav-bar input[type="checkbox"]:not(:checked) ~ label#burger {
+    display: inline;
+}
+.nav-bar input[type="checkbox"]:not(:checked) ~ label#cross {
+    display: none;
+}
+.nav-bar input[type="checkbox"]:checked ~ label#burger {
+    display: none;
+}
+.nav-bar input[type="checkbox"]:checked ~ label#cross {
+    display: inline;
 }
 
 #side-bar {
@@ -78,7 +87,6 @@ header nav span {
     position: fixed;
     z-index: 4;
     inset: 0;
-    background-color: rgb(37, 5, 95);
 }
 
 #side-bar li {
@@ -91,6 +99,16 @@ header nav span {
 }
 #side-bar li a input[type="radio"] {
     display: none;
+}
+
+#anime {
+    position: fixed;
+    background-color: rgb(37, 5, 95);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    clip-path: circle(15px at calc(100% - 20px) -15px);
+    transition: all 700ms;
 }
 
 section {
@@ -343,11 +361,13 @@ section h3 {
     }
 }
 
-@keyframes sidbarani {
+@keyframes sidebar-anim {
     0% {
-        display: none;
+        width: 4rem;
+        height: 4rem;
     }
     100% {
-        display: flex;
+        width: 100vw;
+        height: 100vh;
     }
 }
