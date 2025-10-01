@@ -250,6 +250,20 @@ section h3 {
     color: rgb(41, 57, 81);
 }
 
+/* Experience */
+#experience .card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(236, 248, 200);
+}
+#experience .exp-img {
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+}
+
+
 /* Project */
 #project .card {
     margin: 1rem;

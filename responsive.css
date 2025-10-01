@@ -40,6 +40,10 @@
     .about-img img {
         height: 200px;
     }
+    /* experience */
+    .exp-img {
+        height: 250px;
+    }
     /* project */
     .project-img img {
         height: 250px;
@@ -53,6 +57,9 @@
 @media only screen and (max-width: 400px) {
     /* About */
     .about-img img {
+        height: 150px;
+    }
+    .exp-img {
         height: 150px;
     }
     /* Project */
